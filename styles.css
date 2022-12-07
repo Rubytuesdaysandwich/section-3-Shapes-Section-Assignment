@@ -30,6 +30,19 @@ p {
   display: flex;
   justify-content: center;
 }
+/*making changes to name 2 in card 2▼*/
+.name-2 {
+  margin-left: 16px;
+  display: flex;
+  justify-content: left;
+}
+.about-2 {
+  margin-left: 16px;
+  margin-right: 16px;
+  display: flex;
+  justify-content: left;
+}
+/* making changes to name 2 in card 2▲ */
 /*making changes to card 5▼*/
 .name-5 {
   /*card 5 setting the name to the left*/
@@ -40,6 +53,7 @@ p {
 .about-5 {
   /*setting the about section on card 5 to the left as well*/
   margin-left: 16px;
+  margin-right: 16px;
   display: flex;
   justify-content: left;
 }
@@ -85,3 +99,8 @@ p {
   max-height: auto;
 }
 /* end profile image▲ */
+/*card type describes the type of card at the bottom*/
+.card-type {
+  display: flex;
+  justify-content: center;
+}
