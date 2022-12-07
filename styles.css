@@ -1,0 +1,57 @@
+body {
+  background-color: whitesmoke;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 33.3%);
+  grid-template-rows: repeat(3, 50%);
+}
+.card-container {
+  border: solid black 1px;
+  border-radius: 3px;
+  max-height: 500px;
+  margin: 16px;
+}
+.about-profile-container {
+}
+
+/* social icons facbook, twitter,googleplus ▼ */
+.icons-container {
+  margin: 1em;
+}
+.icons-container > a > i {
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  border-radius: 100%;
+  padding: 0.5rem;
+  max-height: 0.9rem;
+  max-width: auto;
+  margin-right: 10px;
+}
+/*end social icons facbook, twitter,googleplus ▲ */
+/* profile image ▼ */
+.profile-image-container {
+  margin: 5px;
+}
+.profile-image-container > img {
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  border-radius: 150%;
+  max-width: 4em;
+  max-height: auto;
+}
+/* end profile image▲ */
