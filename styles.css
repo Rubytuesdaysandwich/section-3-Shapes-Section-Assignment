@@ -24,9 +24,39 @@ p {
   max-height: 500px;
   margin: 16px;
 }
-.about-profile-container {
+/* set the position of the text within the profile cards ▼*/
+.about-profile-container,
+.name-container {
+  display: flex;
+  justify-content: center;
 }
-
+/*making changes to card 5▼*/
+.name-5 {
+  /*card 5 setting the name to the left*/
+  margin-left: 16px;
+  display: flex;
+  justify-content: left;
+}
+.about-5 {
+  /*setting the about section on card 5 to the left as well*/
+  margin-left: 16px;
+  display: flex;
+  justify-content: left;
+}
+.go-somewhere-btn-container {
+  margin-left: 16px;
+  display: flex;
+  justify-content: left;
+  margin: 16px;
+}
+.go-somewhere {
+  color: white;
+  background-color: darkgreen;
+  border: none;
+  padding: 0.5rem;
+}
+/*making changes to card 5▲*/
+/* set the position of the text within the profile cards▲ */
 /* social icons facbook, twitter,googleplus ▼ */
 .icons-container {
   margin: 1em;
