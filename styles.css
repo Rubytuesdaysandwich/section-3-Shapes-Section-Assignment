@@ -25,7 +25,7 @@ p {
   border-radius: 3px;
   max-height: 500px;
   margin: 16px;
-  height: 75%;
+  height: 80%;
 }
 /* set the position of the text within the profile cards and social icons ▼*/
 .about-profile-container,
@@ -50,15 +50,14 @@ p {
   display: flex;
   justify-content: left;
 }
-.icons-container-2 {
-  display: flex;
-  justify-content: left;
-}
+
 /* making changes to name 2 in card 2▲ */
 /* making changes to card 4 ▼ */
 .about-4 {
   display: flex;
   justify-content: center;
+  margin: 16px;
+  overflow-wrap: normal;
 }
 /* making changes to card 4 ▲ */
 /*making changes to card 5▼*/
@@ -103,10 +102,25 @@ p {
   max-width: auto;
   margin-right: 10px;
 }
+.icons-container-2 {
+  display: flex;
+  justify-content: left;
+}
+.icons-container > a > i {
+  margin-bottom: 10px;
+}
 /*end social icons facbook, twitter,googleplus ▲ */
 /* profile image ▼ */
 .profile-image-container {
   margin: 5px;
+  margin-top: 25%;
+  display: flex;
+  justify-content: center;
+}
+.profile-image-container-2 {
+  display: flex;
+  justify-content: left;
+  margin-left: 16px;
 }
 .profile-image-container > img {
   border-style: solid;
@@ -115,6 +129,11 @@ p {
   border-radius: 150%;
   max-width: 4em;
   max-height: auto;
+}
+.profile-image-container > .square-box {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
 }
 /* end profile image▲ */
 /*card type describes the type of card at the bottom*/
