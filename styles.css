@@ -16,19 +16,21 @@ p {
 .cards-container {
   /*set grid for cards*/
   display: grid;
-  grid-template-columns: repeat(3, 33.3%);
-  grid-template-rows: repeat(3, 50%);
+  gap: 0.9rem;
+  grid-template-columns: repeat(auto-fit, 26rem); /*33.3%*/
+  grid-template-rows: repeat(auto-fit, 50%);
 }
 .card-container {
   /*make the border and height of the cards and the area they take up*/
   border: solid black 1px;
   border-radius: 3px;
-  /* min-height: 400px; */
+  max-height: 35rem;
   margin: 16px;
   height: 90%;
 }
 .card-container-5 {
 }
+
 /* set the position of the text within the profile cards and social icons ▼*/
 .about-profile-container,
 .name-container,
@@ -115,7 +117,6 @@ p {
 /*end social icons facbook, twitter,googleplus ▲ */
 /* profile image ▼ */
 .profile-image-container {
-  margin: 5px;
   margin-top: 25%;
   display: flex;
   justify-content: center;
@@ -134,19 +135,23 @@ p {
   margin-left: 16px;
 }
 
-.profile-image-container-5 > .square-box {
+.profile-image-container-square > .square-box {
   border-radius: 10px;
   width: 90%;
   max-height: 25%;
   box-shadow: 10px 10px 5px rgba(230, 230, 230, 0.945);
-  margin-top: -100px;
+  margin-top: -10px;
   border-style: none;
-  display: flex;
-  justify-self: left;
 }
-/* end profile image▲ */ /*card type describes the type of card at the bottom*/
+.profile-image-container-5 {
+  display: flex;
+  justify-content: center;
+}
+/* end profile image▲ */
+/*card type describes the type of card at the bottom▼*/
 .card-type {
   display: flex;
   justify-content: center;
   font-weight: 600;
+  margin: 16px;
 }
