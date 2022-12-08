@@ -28,25 +28,54 @@ p {
   margin-top: 0.5rem;
   /* margin-top: 40px; */
   height: 90%;
+  background-color: rgba(194, 194, 194, 0.582);
+}
+/*controls the background images of the cards labeled 1-5 top left to right▼*/
+.background-1 {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  filter: blur(4px);
+}
+.background-2 {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  clip-path: inset(0 0 22.5em 0);
+}
+.background-3 {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  backdrop-filter: blur(20px);
+  clip-path: polygon(0% 0, 100% 0%, 100% 20%, 0 35%);
+}
+.background-4 {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  clip-path: inset(0 0 24.9em 0);
 }
 
 .card-container-1 {
-  background-image: url(images/ryan-klaus-qzZ7Xcscqh8-unsplash.jpg);
-  background-repeat: no-repeat !important;
-  background-size: cover;
-  background-position: center !important;
-  backdrop-filter: blur(20px);
-  opacity: 0.5;
-  z-index: -1;
+  backdrop-filter: blur(
+    0px
+  ); /*the backdrop filter contains the images to the containers*/
+}
+.card-container-2 {
+  backdrop-filter: blur(0px);
 }
 .card-container-3 {
-  background-image: url(images/alice-triquet-HeEJU3nrg_0-unsplash.jpg);
-
-  width: 100%;
-  background-repeat: no-repeat !important;
-  background-size: cover;
-  background-position: center !important;
+  backdrop-filter: blur(0px);
 }
+.card-container-4 {
+  backdrop-filter: blur(0px);
+}
+/*controls the background images of the cards labeled 1-5 top left to right▲*/
 .card-container-5 {
   margin-top: 40px;
 }
@@ -63,11 +92,11 @@ p {
   font-size: larger;
 }
 /*making changes to name 2 and about text within card 2▼*/
-.name-1,
+/* !.name-1,
 .about-1,
 .icons-container-1 > a > i {
   color: white;
-}
+} */
 /*making changes to name 2 and about text within card 2▲ */
 /*making changes to name 2 in card 2▼*/
 .name-2 {
@@ -133,6 +162,7 @@ p {
   max-height: 0.9rem;
   max-width: auto;
   margin-right: 10px;
+  color: rgb(245, 9, 245);
 }
 .icons-container-2 {
   display: flex;
