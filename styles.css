@@ -24,10 +24,11 @@ p {
   /*make the border and height of the cards and the area they take up*/
   border: solid black 1px;
   border-radius: 3px;
+  min-height: 35rem;
   max-height: 35rem;
   margin-top: 0.5rem;
   /* margin-top: 40px; */
-  height: 90%;
+  /* height: 90%; */
   background-color: rgba(194, 194, 194, 0.582);
 }
 /*controls the background images of the cards labeled 1-5 top left to right▼*/
@@ -43,7 +44,7 @@ p {
   height: 100%;
   z-index: -1;
   position: absolute;
-  clip-path: inset(0 0 22.5em 0);
+  clip-path: inset(0 0 75% 0);
 }
 .background-3 {
   width: 100%;
@@ -51,14 +52,14 @@ p {
   z-index: -1;
   position: absolute;
   backdrop-filter: blur(20px);
-  clip-path: polygon(0% 0, 100% 0%, 100% 20%, 0 35%);
+  clip-path: polygon(0% 0, 100% 0%, 100% 17.5%, 0 35%);
 }
 .background-4 {
   width: 100%;
   height: 100%;
   z-index: -1;
   position: absolute;
-  clip-path: inset(0 0 24.9em 0);
+  clip-path: inset(0 0 75% 0);
 }
 
 .card-container-1 {
@@ -91,13 +92,6 @@ p {
   font-weight: 600;
   font-size: larger;
 }
-/*making changes to name 2 and about text within card 2▼*/
-/* !.name-1,
-.about-1,
-.icons-container-1 > a > i {
-  color: white;
-} */
-/*making changes to name 2 and about text within card 2▲ */
 /*making changes to name 2 in card 2▼*/
 .name-2 {
   margin-left: 16px;
@@ -180,8 +174,8 @@ p {
 }
 .profile-image-container > img {
   border-style: solid;
-  border-color: black;
-  border-width: 1px;
+  border-color: white;
+  border-width: 2px;
   border-radius: 150%;
   width: 4em;
   height: auto;
