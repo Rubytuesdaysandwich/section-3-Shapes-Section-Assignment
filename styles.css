@@ -23,9 +23,11 @@ p {
   /*make the border and height of the cards and the area they take up*/
   border: solid black 1px;
   border-radius: 3px;
-  max-height: 500px;
+  /* min-height: 400px; */
   margin: 16px;
-  height: 80%;
+  height: 90%;
+}
+.card-container-5 {
 }
 /* set the position of the text within the profile cards and social icons ▼*/
 .about-profile-container,
@@ -85,6 +87,7 @@ p {
   background-color: darkgreen;
   border: none;
   padding: 0.5rem;
+  margin-bottom: 16px;
 }
 /*making changes to card 5▲*/
 /* set the position of the text within the profile cards▲ */
@@ -130,16 +133,18 @@ p {
   justify-content: left;
   margin-left: 16px;
 }
-.profile-image-container-5 {
-}
+
 .profile-image-container-5 > .square-box {
   border-radius: 10px;
   width: 90%;
+  max-height: 25%;
   box-shadow: 10px 10px 5px rgba(230, 230, 230, 0.945);
   margin-top: -100px;
+  border-style: none;
+  display: flex;
+  justify-self: left;
 }
-/* end profile image▲ */
-/*card type describes the type of card at the bottom*/
+/* end profile image▲ */ /*card type describes the type of card at the bottom*/
 .card-type {
   display: flex;
   justify-content: center;
