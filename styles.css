@@ -16,7 +16,7 @@ p {
 .cards-container {
   /*set grid for cards*/
   display: grid;
-  gap: 0.9rem;
+  gap: 1rem;
   grid-template-columns: repeat(auto-fit, 26rem); /*33.3%*/
   grid-template-rows: repeat(auto-fit, 50%);
 }
@@ -25,10 +25,30 @@ p {
   border: solid black 1px;
   border-radius: 3px;
   max-height: 35rem;
-  margin: 16px;
+  margin-top: 0.5rem;
+  /* margin-top: 40px; */
   height: 90%;
 }
+
+.card-container-1 {
+  background-image: url(images/ryan-klaus-qzZ7Xcscqh8-unsplash.jpg);
+  background-repeat: no-repeat !important;
+  background-size: cover;
+  background-position: center !important;
+  backdrop-filter: blur(20px);
+  opacity: 0.5;
+  z-index: -1;
+}
+.card-container-3 {
+  background-image: url(images/alice-triquet-HeEJU3nrg_0-unsplash.jpg);
+
+  width: 100%;
+  background-repeat: no-repeat !important;
+  background-size: cover;
+  background-position: center !important;
+}
 .card-container-5 {
+  margin-top: 40px;
 }
 
 /* set the position of the text within the profile cards and social icons ▼*/
@@ -42,6 +62,13 @@ p {
   font-weight: 600;
   font-size: larger;
 }
+/*making changes to name 2 and about text within card 2▼*/
+.name-1,
+.about-1,
+.icons-container-1 > a > i {
+  color: white;
+}
+/*making changes to name 2 and about text within card 2▲ */
 /*making changes to name 2 in card 2▼*/
 .name-2 {
   margin-left: 16px;
@@ -140,7 +167,7 @@ p {
   width: 90%;
   max-height: 25%;
   box-shadow: 10px 10px 5px rgba(230, 230, 230, 0.945);
-  margin-top: -10px;
+  margin-top: -15px;
   border-style: none;
 }
 .profile-image-container-5 {
